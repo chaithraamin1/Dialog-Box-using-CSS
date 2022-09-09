@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    justify-content: center;
+}
+.dialog-box img{
+    width: 100px;
+    margin-top: -50px;
+}
+.dialog-box{
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    top: 0;
+    visibility: hidden;
+    padding: 20px 30px;
+    border-radius: 6px;
+    max-width: 400px;
+    transition: transform 0.4s, top 0.4s;
+    width: 100%;
+}
+.open-dialog{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+
+}
+.close-dialog{
+     visibility: hidden;
+}
+.dialog-box h3{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.dialog-box p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.btn-ok{
+    width: 100%;
+    color: white;
+    background-color: rgb(19, 95, 19);
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+}

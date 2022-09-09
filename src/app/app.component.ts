@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dialog-box';
+  ngOnInit(){
+    
+  }
+  submit(){
+    let popup=document.getElementById("popup");
+    popup?.classList.add("open-dialog")
+  }
+  close(){
+    let popup=document.getElementById("popup");
+    popup?.classList.remove("open-dialog")
+  }
 }
